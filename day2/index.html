@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .box {
+        width: 200px;
+        height: 50px;
+        border: 50px solid #e74c3c;
+        margin-bottom: 20px;
+      }
+      .green {
+        border-color: #2ecc71;
+      }
+      .blue {
+        border-color: #3498db;
+      }
+      .hidden {
+        visibility: hidden;
+      }
       .challenge2 {
         background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0,
           linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0,
@@ -38,6 +53,12 @@
     </style>
   </head>
   <body>
+    <div>
+      <div class="box">Box 1</div>
+      <div class="box green">Box 2</div>
+      <div class="box blue">Box 3</div>
+      <div class="box hidden">Box 4</div>
+    </div>
     <div class="challenge2">
       <h1>HTML Tutorial</h1>
       <p class="sub-header">
