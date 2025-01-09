@@ -12,6 +12,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a.menu-icon:hover {
+  text-decoration: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,10 +24,11 @@ a:hover {
   padding-right: 20px;
 }
 .login {
-  background-color: #ecf0f1;
-  border: none;
-  border-radius: 20px;
+  background-color: #c0392b;
+  color: #fff;
   padding: 10px 20px;
+  border-left: 2px solid #d35400;
+  border-top: 2px solid #d35400;
 }
 .section {
   display: flex;
