@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      body div.box:nth-of-type(even) {
+        background-color: gray;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .box-sm {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+      .group {
+        display: flex;
+        position: absolute;
+        left: 400px;
+      }
+      .box1 {
+        position: relative;
+        top: 100px;
+      }
+      .box2 {
+        position: relative;
+        left: 200px;
+      }
+      .box5 {
+        position: relative;
+        left: 200px;
+      }
+      .heart-img {
+        position: absolute;
+        right: -150px;
+        top: -100px;
+        z-index: 100;
+      }
+      .mario-img {
+        position: absolute;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="mario-img"
+      width="100"
+      src="asset/kart-mario-removebg-preview.png"
+      alt=""
+    />
+    <div class="box box1" onclick="location.href='1.html'">Problem 1</div>
+    <div class="box box2" onclick="location.href='2.html'">Problem 2</div>
+
+    <div class="group">
+      <div class="box" onclick="location.href='3.html'">Problem 3</div>
+      <div class="box" onclick="location.href='4.html'">Problem 4</div>
+      <div>
+        <img
+          class="heart-img"
+          src="asset/pixel-heart.png"
+          alt=""
+          width="100"
+          height="100"
+        />
+        <div class="box box5" onclick="location.href='5.html'">Problem 5</div>
+      </div>
+    </div>
+  </body>
+</html>

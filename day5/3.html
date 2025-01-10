@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 3</title>
+    <style>
+      * {
+        color: #fff;
+      }
+      body {
+        margin: 0;
+      }
+      .box-sm {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+      }
+      .box-lg {
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+      }
+      .div1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50px;
+        align-items: center;
+      }
+      .div2 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div class="box-lg">div1</div>
+      <div class="div2">
+        <div class="box-sm">div2</div>
+      </div>
+    </div>
+  </body>
+</html>
